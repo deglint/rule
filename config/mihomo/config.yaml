@@ -107,17 +107,17 @@ dns:
 # 出站策略
 proxy-groups:
   - {name: Emby, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/emby.png, <<: *pr}
+  - {name: NETFLIX, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/netflix(red).png, type: select, proxies: [韩国, 新加坡, 台湾, 香港]}
   - {name: YouTube, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/youtube.png, <<: *pr}
   - {name: Google, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/google(1).png, type: select, proxies: [新加坡]}
   - {name: ChatGPT, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/ChatGPT-green.png, type: select, proxies: [新加坡]}
   - {name: GitHub, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/github.png, type: select, proxies: [新加坡]}
+  - {name: Telegram, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/telegram(blue1).png, type: select, proxies: [新加坡]}
+  - {name: Spotify, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/spotify(green).png, type: select, proxies: [新加坡, 台湾, 香港]}
+  - {name: TikTok, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/tiktok((2).png, type: select, proxies: [新加坡, 台湾, 香港]}
+  - {name: PayPal, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/paypal.png, type: select, proxies: [新加坡]}
   - {name: OneDrive, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/OneDrive.png, type: select, proxies: [直连]}
   - {name: Microsoft, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/microsoft.png, type: select, proxies: [直连]}
-  - {name: TikTok, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/tiktok((2).png, type: select, proxies: [新加坡, 台湾, 香港]}
-  - {name: Spotify, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/spotify(green).png, type: select, proxies: [新加坡, 台湾, 香港]}
-  - {name: Telegram, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/telegram(blue1).png, type: select, proxies: [新加坡]}
-  - {name: NETFLIX, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/netflix(red).png, type: select, proxies: [韩国, 新加坡, 台湾, 香港]}
-  - {name: PayPal, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/paypal.png, type: select, proxies: [新加坡]}
   - {name: 漏网之鱼, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/shutiao.png, <<: *pr}
   - {name: 新加坡, <<: *url-test, filter: "^(?=.*ZQ)(?=.*新加坡)(?!.*hy2)|(?=.*LXY)(?=.*新加坡高速)|(?=.*BigME)(?=.*SG)(?=.*稳定).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/singapore(2).png}
   - {name: 日本, <<: *url-test, filter: "^(?=.*ZQ)(?=.*日本东京)|(?=.*LXY)(?=.*日本高速)|(?=.*BigME)(?=.*JP)(?=.*稳定).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Japan(1).png}
