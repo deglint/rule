@@ -115,7 +115,6 @@ proxy-groups:
   - {name: Telegram, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/telegram(blue1).png, type: select, proxies: [新加坡]}
   - {name: Spotify, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/spotify(green).png, type: select, proxies: [新加坡, 台湾, 香港]}
   - {name: TikTok, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/tiktok((2).png, type: select, proxies: [新加坡, 台湾, 香港]}
-  - {name: 巴哈姆特, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/bahamute.png, type: select, proxies: [台湾]}
   - {name: PayPal, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/paypal.png, type: select, proxies: [新加坡]}
   - {name: OneDrive, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/OneDrive.png, type: select, proxies: [直连]}
   - {name: Microsoft, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/microsoft.png, type: select, proxies: [直连]}
@@ -132,7 +131,7 @@ rules:
   - DOMAIN-SUFFIX,oceancloud.asia,Emby
   - DOMAIN-SUFFIX,imbc.com,韩国
   - DOMAIN-SUFFIX,kr,韩国
-  - DOMAIN-SUFFIX,tw,巴哈姆特
+  - DOMAIN-SUFFIX,tw,台湾
   - RULE-SET,private_ip,直连
   - RULE-SET,private_domain,直连
   - DOMAIN-SUFFIX,qichiyu.com,漏网之鱼
