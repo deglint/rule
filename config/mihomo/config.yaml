@@ -11,34 +11,19 @@ p: &p {type: http, interval: 86400, health-check: {enable: true, url: https://ww
 proxy-providers:
   Airport1:
     url: "https://dash.pqjc.site/api/v1/client/subscribe?token=2927a313392c80bcc33f5263978b4064"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
+    <<: *p
     proxy: 直连
     override:
       additional-prefix: "ZQ |"
   Airport2:
     url: "https://liangxin.xyz/api/v1/liangxin?OwO=b9d7616efa898e337842969b17e7e6e7"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
+    <<: *p
     proxy: 直连
     override:
       additional-prefix: "LXY |"
   Airport3:
     url: "https://moes.lnaspiring.com/Moe233-Subs/qwbm/api/v1/client/subscribe?token=2d85c5bb05dbab1fef2438dc3e52495d"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
+    <<: *p
     proxy: 直连
     override:
       additional-prefix: "BigME |"
@@ -129,6 +114,7 @@ proxy-groups:
   - {name: OneDrive, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/OneDrive.png, type: select, proxies: [直连]}
   - {name: Microsoft, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/microsoft.png, type: select, proxies: [直连]}
   - {name: TikTok, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/tiktok((2).png, type: select, proxies: [新加坡, 台湾, 香港]}
+  - {name: Spotify, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/spotify(green).png, type: select, proxies: [新加坡, 台湾, 香港]}
   - {name: Telegram, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/telegram(blue1).png, type: select, proxies: [新加坡]}
   - {name: NETFLIX, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/netflix(red).png, type: select, proxies: [韩国, 新加坡, 台湾, 香港]}
   - {name: PayPal, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/paypal.png, type: select, proxies: [新加坡]}
@@ -157,6 +143,7 @@ rules:
   - RULE-SET,microsoft_domain,Microsoft
   - RULE-SET,apple_domain,直连
   - RULE-SET,tiktok_domain,TikTok
+  - RULE-SET,spotify_domain,Spotify
   - RULE-SET,telegram_domain,Telegram
   - RULE-SET,netflix_domain,NETFLIX
   - RULE-SET,paypal_domain,PayPal
@@ -189,6 +176,7 @@ rule-providers:
   apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
   speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
   tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  spotify_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"}
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   
