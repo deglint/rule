@@ -1,3 +1,6 @@
+# 策略组相关
+pr: &pr {type: url-test, proxies: [新加坡, 日本, 韩国, 台湾, 香港]}
+
 # 机场订阅
 proxy-providers:
   Airport1:
