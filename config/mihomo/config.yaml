@@ -125,11 +125,11 @@ proxy-groups:
   - {name: OneDrive, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/OneDrive.png, type: select, proxies: [直连]}
   - {name: Microsoft, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/microsoft.png, type: select, proxies: [直连]}
   - {name: 漏网之鱼, icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/shutiao.png, <<: *pr}
-  - {name: 新加坡, <<: *url-test, filter: "^(?=.*ZQ)(?=.*新加坡)(?!.*hy2)|(?=.*LXY)(?=.*新加坡高速)|(?=.*BigME)(?=.*SG)(?=.*稳定).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/singapore(2).png}
-  - {name: 日本, <<: *url-test, filter: "^(?=.*ZQ)(?=.*日本东京)|(?=.*LXY)(?=.*日本高速)|(?=.*BigME)(?=.*JP)(?=.*稳定).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Japan(1).png}
-  - {name: 韩国, <<: *url-test, filter: "^(?=.*ZQ)(?=.*韩国首尔)|(?=.*LXY)(?=.*韩国高速).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Korea(2).png}
-  - {name: 台湾, <<: *url-test, filter: "^(?=.*ZQ)(?=.*台湾)|(?=.*LXY)(?=.*台湾高速)|(?=.*BigME)(?=.*TW)(?=.*稳定).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/taiwan.png}
-  - {name: 香港, <<: *url-test, filter: "^(?=.*ZQ)(?=.*AWS香港)|(?=.*LXY)(?=.*香港高速)|(?=.*BigME)(?=.*HK)(?=.*稳定).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Hongkong(2).png}
+  - {name: 新加坡, <<: *url-test, filter: "^(?=.*ZQ)(?=.*新加坡)(?!.*hy2)|(?=.*LXY)(?=.*新加坡高速)|(?=.*BigME)(?=.*SG)(?=.*三网|IPv6)|(?=.*XSUS)(?=.*狮城).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/singapore(2).png}
+  - {name: 日本, <<: *url-test, filter: "^(?=.*ZQ)(?=.*日本东京)|(?=.*LXY)(?=.*日本高速)|(?=.*BigME)(?=.*JP)(?=.*三网|IPv6)|(?=.*XSUS)(?=.*狮城).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Japan(1).png}
+  - {name: 韩国, <<: *url-test, filter: "^(?=.*ZQ)(?=.*韩国首尔)|(?=.*LXY)(?=.*韩国高速)|(?=.*BigME)(?=.*KR)(?=.*三网|IPv6).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Korea(2).png}
+  - {name: 台湾, <<: *url-test, filter: "^(?=.*ZQ)(?=.*台湾)|(?=.*LXY)(?=.*台湾高速)|(?=.*BigME)(?=.*TW)(?=.*三网|IPv6)|(?=.*XSUS)(?=.*台湾).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/taiwan.png}
+  - {name: 香港, <<: *url-test, filter: "^(?=.*ZQ)(?=.*AWS香港)|(?=.*LXY)(?=.*香港高速)|(?=.*BigME)(?=.*HK)(?=.*三网|IPv6)|(?=.*XSUS)(?=.*香港).*$", icon: https://git.ihtw.moe/JohnsonRan/QuanX-icon-rule/raw/main/icon/Hongkong(2).png}
 
 # 规则匹配
 rules:
