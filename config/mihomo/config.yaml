@@ -28,7 +28,7 @@ proxy-providers:
     override:
       additional-prefix: "BigME |"
   Airport4:
-    url: "https://moes.lnaspiring.com/Moe233-Subs/qwbm/api/v1/client/subscribe?token=2d85c5bb05dbab1fef2438dc3e52495d"
+    url: "http://23.145.248.232:13389/api/v1/client/subscribe?token=8920b4626532841f45c49c2b6b2aa360"
     <<: *p
     proxy: 直连
     override:
