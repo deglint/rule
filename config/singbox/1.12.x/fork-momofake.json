@@ -10,7 +10,7 @@
           "timeout": "3s"
       },
       "url": "https://dash.pqjc.site/api/v1/client/subscribe?token=2927a313392c80bcc33f5263978b4064",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -24,7 +24,7 @@
           "timeout": "3s"
       },
       "url": "https://liangxin.xyz/api/v1/liangxin?OwO=b9d7616efa898e337842969b17e7e6e7",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -38,7 +38,7 @@
           "timeout": "3s"
       },
       "url": "https://moes.lnaspiring.com/Moe233-Subs/qwbm/api/v1/client/subscribe?token=2d85c5bb05dbab1fef2438dc3e52495d",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -52,7 +52,7 @@
           "timeout": "3s"
       },
       "url": "http://23.145.248.232:13389/api/v1/client/subscribe?token=8920b4626532841f45c49c2b6b2aa360",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     }
