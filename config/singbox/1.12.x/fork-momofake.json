@@ -11,6 +11,7 @@
       },
       "url": "https://dash.pqjc.site/api/v1/client/subscribe?token=2927a313392c80bcc33f5263978b4064",
       "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
+      "include": "AWS",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
