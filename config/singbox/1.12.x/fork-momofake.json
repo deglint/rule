@@ -97,11 +97,11 @@
     {"tag": "OneDrive", "type": "selector", "outbounds": ["DIRECT"]},
     {"tag": "Apple", "type": "selector", "outbounds": ["DIRECT", "香港", "台湾", "新加坡"]},
     {"tag": "漏网之鱼", "type": "selector", "outbounds": ["默认"]},
-    {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"ZQ.*AWS香港|LXY.*香港高速|BigME.*HK.*三网|XSUS.*香港"},
-    {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*日本东京|LXY.*日本高速|BigME.*JP.*三网|XSUS.*日本"},
-    {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*新加坡|LXY.*新加坡高速|BigME.*SG.*三网|XSUS.*狮城", "exclude": "hy2"},
-    {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*韩国首尔|LXY.*韩国高速|BigME.*KR.*三网"},
-    {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*台湾|LXY.*台湾高速|BigME.*TW.*三网|XSUS.*台湾"},
+    {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"ZQ.*香港|LXY.*香港高速|BigME.*HK|XSUS.*香港"},
+    {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*日本|LXY.*日本高速|BigME.*JP|XSUS.*日本"},
+    {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*新加坡|LXY.*新加坡高速|BigME.*SG|XSUS.*狮城", "exclude": "hy2"},
+    {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*韩国|LXY.*韩国高速|BigME.*KR|XSUS.*韩国"},
+    {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*台湾|LXY.*台湾高速|BigME.*TW|XSUS.*台湾"},
     {"tag": "DIRECT", "type": "direct"}
   ],
   "route": {
