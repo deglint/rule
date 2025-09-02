@@ -98,10 +98,10 @@
     {"tag": "Apple", "type": "selector", "outbounds": ["DIRECT", "香港", "台湾", "新加坡"]},
     {"tag": "漏网之鱼", "type": "selector", "outbounds": ["默认"]},
     {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"香港|.*HK"},
-    {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*日本|LXY.*日本|BigME.*JP|XSUS.*日本"},
-    {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*新加坡|LXY.*新加坡|BigME.*SG|XSUS.*狮城", "exclude": "hy2"},
-    {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*韩国|LXY.*韩国|BigME.*KR|XSUS.*韩国"},
-    {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "ZQ.*台湾|LXY.*台湾|BigME.*TW|XSUS.*台湾"},
+    {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "日本|.*JP"},
+    {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城"},
+    {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "韩国|.*KR"},
+    {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "台湾|.*TW"},
     {"tag": "DIRECT", "type": "direct"}
   ],
   "route": {
