@@ -104,7 +104,6 @@
       {"domain_suffix": "bigmelook.com", "outbound": "默认"},
       {"domain_suffix": "oceancloud.asia", "outbound": "默认"},
       {"domain_suffix": "imbc.com", "outbound": "韩国"},
-      {"domain_suffix": "kr", "outbound": "韩国"},
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "DIRECT"},
