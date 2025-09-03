@@ -59,6 +59,21 @@
       "include": "香港|狮城|台湾|日本|韩国",
       "download_detour": "DIRECT",
       "update_interval": "12h"
+    },
+    {
+      "type": "remote",
+      "tag": "Fac",
+      "health_check": {
+          "enabled": false,
+          "url": "https://www.gstatic.com/generate_204",
+          "interval": "10m",
+          "timeout": "3s"
+      },
+      "url": "https://fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=3a92069384366bc8c44ebb5f9a2bc6c3",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
+      "include": "SGP|JPN|TWN|HKG",
+      "download_detour": "DIRECT",
+      "update_interval": "12h"
     }
   ],
   "dns": {
@@ -97,11 +112,11 @@
     {"tag": "OneDrive", "type": "selector", "outbounds": ["DIRECT"]},
     {"tag": "Apple", "type": "selector", "outbounds": ["DIRECT", "香港", "台湾", "新加坡"]},
     {"tag": "漏网之鱼", "type": "selector", "outbounds": ["默认"]},
-    {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"香港|.*HK"},
-    {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "日本|.*JP"},
-    {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城"},
+    {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"香港|.*HK|.*HKG"},
+    {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "日本|.*JP|.*JPN"},
+    {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城|.*SGP"},
     {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "韩国|.*KR"},
-    {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "台湾|.*TW"},
+    {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "台湾|.*TW|.*TWN"},
     {"tag": "DIRECT", "type": "direct"}
   ],
   "route": {
