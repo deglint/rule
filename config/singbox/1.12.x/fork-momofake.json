@@ -54,7 +54,7 @@
           "interval": "10m",
           "timeout": "3s"
       },
-      "url": "http://23.145.248.232:13389/api/v1/client/subscribe?token=8920b4626532841f45c49c2b6b2aa360&flag=meta",
+      "url": "http://23.145.248.238:13389/api/v1/client/subscribe?token=8920b4626532841f45c49c2b6b2aa360",
       "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
       "include": "香港|狮城|台湾|日本|韩国",
       "download_detour": "DIRECT",
