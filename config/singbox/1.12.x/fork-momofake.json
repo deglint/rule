@@ -111,7 +111,6 @@
     {"tag": "Microsoft", "type": "selector", "outbounds": ["DIRECT"]},
     {"tag": "OneDrive", "type": "selector", "outbounds": ["DIRECT"]},
     {"tag": "Apple", "type": "selector", "outbounds": ["DIRECT", "香港", "台湾", "新加坡"]},
-    {"tag": "漏网之鱼", "type": "selector", "outbounds": ["默认"]},
     {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"香港|.*HK|.*HKG"},
     {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "日本|.*JP|.*JPN"},
     {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城|.*SGP"},
@@ -174,8 +173,8 @@
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "DIRECT"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs", "download_detour": "DIRECT"}
     ],
-    "final": "漏网之鱼",
-    "default_domain_resolver": {"server": "public"}
+    "final": "DIRECT",
+    "default_domain_resolver": {"server": "local"}
   },
   "inbounds": [
     {
