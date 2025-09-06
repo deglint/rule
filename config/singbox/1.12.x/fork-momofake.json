@@ -116,8 +116,7 @@
     {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城|.*SGP"},
     {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "韩国|.*KR"},
     {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "台湾|.*TW|.*TWN"},
-    {"tag": "DIRECT", "type": "direct"},
-    {"tag": "GLOBAL", "type": "selector", "outbounds": ["默认"]}
+    {"tag": "DIRECT", "type": "direct"}
   ],
   "route": {
     "rules": [
