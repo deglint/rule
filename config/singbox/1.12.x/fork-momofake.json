@@ -116,14 +116,14 @@
     {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城|.*SGP"},
     {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "韩国|.*KR"},
     {"tag": "台湾", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "台湾|.*TW|.*TWN"},
-    {"tag": "DIRECT", "type": "direct"}
+    {"tag": "DIRECT", "type": "direct"},
+    {"tag": "GLOBAL", "type": "selector", "outbounds": ["默认"]}
   ],
   "route": {
     "rules": [
       {"domain_suffix": "bigmelook.com", "outbound": "默认"},
       {"domain_suffix": "oceancloud.asia", "outbound": "默认"},
       {"domain_suffix": "imbc.com", "outbound": "韩国"},
-      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "DIRECT"},
       {"clash_mode": "direct", "outbound": "DIRECT"},
@@ -148,7 +148,8 @@
       {"rule_set": "geoip-apple", "outbound": "Apple"},
       {"rule_set": "geoip-telegram", "outbound": "Telegram"},
       {"rule_set": "geoip-netflix", "outbound": "Netflix"},
-      {"rule_set": "geoip-cn", "outbound": "DIRECT"}
+      {"rule_set": "geoip-cn", "outbound": "DIRECT"},
+      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]}
     ],
     "rule_set": [
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "DIRECT"},
@@ -173,7 +174,7 @@
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "DIRECT"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs", "download_detour": "DIRECT"}
     ],
-    "final": "DIRECT",
+    "final": "默认",
     "default_domain_resolver": {"server": "local"}
   },
   "inbounds": [
