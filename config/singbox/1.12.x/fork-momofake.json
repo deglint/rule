@@ -120,13 +120,14 @@
   ],
   "route": {
     "rules": [
-      {"domain_suffix": "bigmelook.com", "outbound": "默认"},
-      {"domain_suffix": "oceancloud.asia", "outbound": "默认"},
-      {"domain_suffix": "imbc.com", "outbound": "韩国"},
+      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "DIRECT"},
       {"clash_mode": "direct", "outbound": "DIRECT"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"domain_suffix": "bigmelook.com", "outbound": "默认"},
+      {"domain_suffix": "oceancloud.asia", "outbound": "默认"},
+      {"domain_suffix": "imbc.com", "outbound": "韩国"},
       {"rule_set": "geosite-ai", "outbound": "AI"},
       {"rule_set": "geosite-spotify", "outbound": "Spotify"},
       {"rule_set": "geosite-youtube", "outbound": "YouTube"},
@@ -147,8 +148,7 @@
       {"rule_set": "geoip-apple", "outbound": "Apple"},
       {"rule_set": "geoip-telegram", "outbound": "Telegram"},
       {"rule_set": "geoip-netflix", "outbound": "Netflix"},
-      {"rule_set": "geoip-cn", "outbound": "DIRECT"},
-      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]}
+      {"rule_set": "geoip-cn", "outbound": "DIRECT"}
     ],
     "rule_set": [
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "DIRECT"},
