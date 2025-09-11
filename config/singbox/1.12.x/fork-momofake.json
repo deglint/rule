@@ -26,7 +26,7 @@
       },
       "url": "https://liangxin.xyz/api/v1/liangxin?OwO=b9d7616efa898e337842969b17e7e6e7",
       "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
-      "include": "^(?=.*高速)(?=.*新加坡|.*日本|.*韩国|.*台湾|.*香港).*$",
+      "include": "(新加坡|日本|韩国|台湾|香港).*高速",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -41,7 +41,7 @@
       },
       "url": "https://moes.lnaspiring.com/Moe233-Subs/qwbm/api/v1/client/subscribe?token=2d85c5bb05dbab1fef2438dc3e52495d",
       "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
-      "include": "^(?=.*三网)(?=.*SG|.*JP|.*KR|.*TW|.*HK).*$",
+      "include": "三网.*(SG|JP|KR|TW|HK)",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
