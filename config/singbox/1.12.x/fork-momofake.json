@@ -120,6 +120,7 @@
   ],
   "route": {
     "rules": [
+      {"domain_suffix": "tw", "outbound": "台湾"},
       {"domain_suffix": "bigmelook.com", "outbound": "默认"},
       {"domain_suffix": "oceancloud.asia", "outbound": "默认"},
       {"domain_suffix": "imbc.com", "outbound": "韩国"},
