@@ -10,7 +10,7 @@
           "timeout": "3s"
       },
       "url": "https://dash.pqjc.site/api/v1/client/subscribe?token=2927a313392c80bcc33f5263978b4064",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2|香港|HK|HKG",
       "include": "AWS",
       "download_detour": "DIRECT",
       "update_interval": "12h"
@@ -25,8 +25,8 @@
           "timeout": "3s"
       },
       "url": "https://liangxin.xyz/api/v1/liangxin?OwO=b9d7616efa898e337842969b17e7e6e7",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
-      "include": "(新加坡|日本|韩国|台湾|香港).*高速",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2|香港|HK|HKG",
+      "include": "(新加坡|日本|韩国|台湾).*高速",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -40,8 +40,8 @@
           "timeout": "3s"
       },
       "url": "https://moes.lnaspiring.com/Moe233-Subs/qwbm/api/v1/client/subscribe?token=2d85c5bb05dbab1fef2438dc3e52495d",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
-      "include": "三网.*(SG|JP|KR|TW|HK)",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2|香港|HK|HKG",
+      "include": "三网.*(KR|TW)",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -55,8 +55,8 @@
           "timeout": "3s"
       },
       "url": "http://23.145.248.238:13389/api/v1/client/subscribe?token=8920b4626532841f45c49c2b6b2aa360",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
-      "include": "香港|狮城|台湾|日本|韩国",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2|香港|HK|HKG",
+      "include": "台湾|韩国",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     },
@@ -70,8 +70,23 @@
           "timeout": "3s"
       },
       "url": "https://fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=3a92069384366bc8c44ebb5f9a2bc6c3",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2",
-      "include": "SGP|JPN|TWN|HKG",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2|香港|HK|HKG",
+      "include": "TWN",
+      "download_detour": "DIRECT",
+      "update_interval": "12h"
+    },
+    {
+      "type": "remote",
+      "tag": "OceanCloud",
+      "health_check": {
+          "enabled": false,
+          "url": "https://www.gstatic.com/generate_204",
+          "interval": "10m",
+          "timeout": "3s"
+      },
+      "url": "https://api09.pearclub.org/api/d2a0b8fec95c7eca74597fd1d825580a",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|直连|到期时间|GB|Expire Date|Traffic|ExpireDate|hy2|香港|HK|HKG|穿透",
+      "include": "台湾|韩国",
       "download_detour": "DIRECT",
       "update_interval": "12h"
     }
@@ -97,21 +112,20 @@
     "reverse_mapping": true
   },
   "outbounds": [
-    {"tag": "默认", "type": "urltest", "outbounds": ["新加坡", "日本", "韩国", "台湾", "香港"]},
+    {"tag": "默认", "type": "urltest", "outbounds": ["新加坡", "日本", "韩国", "台湾"]},
     {"tag": "AI", "type": "selector", "outbounds": ["新加坡"]},
-    {"tag": "Spotify", "type": "selector", "outbounds": ["新加坡", "日本", "韩国", "台湾", "香港"]},
+    {"tag": "Spotify", "type": "selector", "outbounds": ["新加坡", "日本", "韩国", "台湾"]},
     {"tag": "YouTube", "type": "selector", "outbounds": ["默认"]},
     {"tag": "Google", "type": "selector", "outbounds": ["新加坡"]},
     {"tag": "Github", "type": "selector", "outbounds": ["新加坡"]},
     {"tag": "Telegram", "type": "selector", "outbounds": ["新加坡"]},
-    {"tag": "TikTok", "type": "selector", "outbounds": ["台湾", "新加坡", "香港"]},
-    {"tag": "Netflix", "type": "selector", "outbounds": ["韩国", "香港", "台湾", "新加坡"]},
+    {"tag": "TikTok", "type": "selector", "outbounds": ["台湾", "新加坡"]},
+    {"tag": "Netflix", "type": "selector", "outbounds": ["韩国", "台湾", "新加坡"]},
     {"tag": "PayPal", "type": "selector", "outbounds": ["新加坡"]},
     {"tag": "Steam", "type": "selector", "outbounds": ["默认"]},
     {"tag": "Microsoft", "type": "selector", "outbounds": ["DIRECT"]},
     {"tag": "OneDrive", "type": "selector", "outbounds": ["DIRECT"]},
-    {"tag": "Apple", "type": "selector", "outbounds": ["DIRECT", "香港", "台湾", "新加坡"]},
-    {"tag": "香港", "type": "urltest", "outbounds": null, "use_all_providers": true, "include" :"香港|.*HK|.*HKG"},
+    {"tag": "Apple", "type": "selector", "outbounds": ["DIRECT", "台湾", "新加坡"]},
     {"tag": "日本", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "日本|.*JP|.*JPN"},
     {"tag": "新加坡", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "新加坡|.*SG|.*狮城|.*SGP"},
     {"tag": "韩国", "type": "urltest", "outbounds": null, "use_all_providers": true, "include": "韩国|.*KR"},
@@ -127,6 +141,7 @@
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"domain_suffix": "bigmelook.com", "outbound": "默认"},
       {"domain_suffix": "oceancloud.asia", "outbound": "默认"},
+      {"domain_suffix": "tving.com", "outbound": "韩国"},
       {"domain_suffix": "imbc.com", "outbound": "韩国"},
       {"rule_set": "geosite-ai", "outbound": "AI"},
       {"rule_set": "geosite-spotify", "outbound": "Spotify"},
